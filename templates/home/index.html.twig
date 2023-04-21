@@ -7,12 +7,7 @@
         <div class="left"></div>
         <div class="right">
             <h2>Inscription</h2>
-            <input type="text" class="field" placeholder="Nom de famille">
-            <input type="text" class="field" placeholder="Prenoms">
-            <input type="text" class="field" placeholder="Telephone">
-            <input type="text" class="field" placeholder="Club">
-            <input type="text" class="field" placeholder="Fonction">
-            <button class="btn">Envoyer</button>
+            {{ include('backend_participant/_form.html.twig') }}
         </div>
     </div>
 {% endblock %}

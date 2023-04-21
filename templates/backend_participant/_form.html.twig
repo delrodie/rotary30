@@ -1,0 +1,9 @@
+{{ form_start(form) }}
+    {{ form_widget(form.nom) }}
+    {{ form_widget(form.prenoms) }}
+    {{ form_widget(form.telephone) }}
+    {{ form_widget(form.club) }}
+    {{ form_widget(form.fonction) }}
+    {{ form_widget(form) }}
+    <button class="btn">{{ button_label|default('Envoyer') }}</button>
+{{ form_end(form) }}
