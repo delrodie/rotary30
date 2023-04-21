@@ -2,10 +2,32 @@
 <html>
     <head>
         <meta charset="UTF-8">
-        <title>{% block title %}Rotary{% endblock %}</title>
+        <title>{% block title %}Rotary Abidjan Bietry - inscription{% endblock %}</title>
         {% block stylesheets %}
             <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
             <link rel="stylesheet" href="{{ asset('assets/css/responsive.css') }}">
+        {% endblock %}
+        {% block meta %}
+            <meta name="keywords" content="Rotary, club, Bietry">
+            <meta name="description" content="Participation au 30è anniversaire du Rotary Club Abidjan Bietry" />
+            <link rel="canonical" href="{{ absolute_url(path('app_home')) }}" />
+            <link rel="next" href="{{ absolute_url(path('app_home')) }}" />
+
+            <meta property="og:locale" content="fr_FR" />
+            <meta property="og:locale:alternate" content="en_US" />
+            <meta property="og:type" content="website" />
+            <meta property="og:title" content="Rotary Abidjan Bietry - Inscription" />
+            <meta property="og:description" content="Participation au 30è anniversaire du Rotary Club Abidjan Bietry" />
+            <meta property="og:url" content="{{ absolute_url(path('app_home')) }}" />
+            <meta property="og:site_name" content="ITPC West Africa" />
+            <meta property="article:modified_time" content="2023-04-21T07:08:30+00:00" />
+            <meta property="og:image" content="{{ absolute_url(asset('assets/img/affiche.jpg')) }}" />
+            <meta property="og:image:type" content="image/svg+xml" />
+            <meta name="twitter:card" content="summary_large_image" />
+            <meta name="twitter:description" content="Participation au 30è annioversaire du Rotary Club Abidjan Bietry"/>
+            <meta name="twitter:title" content="Rotary Abidjan Bietry - Inscription"/>
+            <meta name="twitter:domain" content="Rotary Abidjan Bietry"/>
+            <meta name="twitter:image:src" content="{{ absolute_url(asset('assets/img/affiche.jpg')) }}"/>
         {% endblock %}
     </head>
     <body>
