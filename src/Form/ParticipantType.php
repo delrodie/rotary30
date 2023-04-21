@@ -17,7 +17,7 @@ class ParticipantType extends AbstractType
             ->add('prenoms', TextType::class,['attr'=>['class'=>'field', 'placeholder'=>"Prenoms"]])
             ->add('telephone', TextType::class,['attr'=>['class'=>'field', 'placeholder'=>"Numéro de telephone"]])
             ->add('club', TextType::class,['attr'=>['class'=>'field', 'placeholder'=>"Club"]])
-            ->add('fonction', TextType::class,['attr'=>['class'=>'field', 'placeholder'=>"Fonction"]])
+            ->add('fonction', TextType::class,['attr'=>['class'=>'field', 'placeholder'=>"Fonction au Rotary"]])
             //->add('code')
             //->add('createdAt')
         ;
